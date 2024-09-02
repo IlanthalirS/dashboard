@@ -1,0 +1,245 @@
+/* General Layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 64px;
+  background-color: #3b82f6;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #2563eb;
+}
+
+.sidebar nav ul li svg {
+  font-size: 1.5rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .divider {
+  height: 30px;
+  border-right: 2px solid #e5e7eb;
+  margin: 0 20px;
+}
+
+.navbar .username {
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar .user-type {
+  color: #6b7280;
+}
+
+/* Main Content */
+.main-content {
+  padding: 24px;
+  background-color: #f3f4f6;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+/* Reminders */
+.reminders {
+  margin-bottom: 24px;
+}
+
+.reminders h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.reminders ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reminders ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Notes Section */
+.notes {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.notes h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.notes .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.note {
+  background-color: #fef9c3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fbbf24;
+  position: relative;
+}
+
+.note:nth-child(2) {
+  background-color: #fde68a;
+  border-color: #f59e0b;
+}
+
+.note:nth-child(3) {
+  background-color: #bfdbfe;
+  border-color: #3b82f6;
+}
+
+.note:nth-child(4) {
+  background-color: #fecaca;
+  border-color: #ef4444;
+}
+
+.note:nth-child(5) {
+  background-color: #bbf7d0;
+  border-color: #10b981;
+}
+
+.note:nth-child(6) {
+  background-color: #fbcfe8;
+  border-color: #ec4899;
+}
+
+.note p {
+  margin: 0;
+  color: #374151;
+}
+
+.note .icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+/* Schedule Section */
+.schedule {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.calendar {
+  background-color: #edf2f7;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.calendar .day {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+/* Add Task */
+.add-task {
+  margin-top: 20px;
+}
+
+.add-task input {
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.add-task button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-task button:hover {
+  background-color: #2563eb;
+}
